@@ -6,11 +6,12 @@ import PlayBack from "../../assets/play-back.svg";
 import Skip from "../../assets/play-forward.svg";
 import { IoMdPause } from "react-icons/io";
 
-const Button = () => {
+const Button = (props) => {
   const [isTouched, setIsTouched] = useState(false);
 
   const touchedHandler = () => {
     setIsTouched(!isTouched);
+    props.touchChecked();
   };
 
   return (

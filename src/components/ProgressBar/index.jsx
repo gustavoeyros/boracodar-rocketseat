@@ -6,18 +6,18 @@ import {
   WrapperProgress,
 } from "./styled";
 
-const ProgressBar = () => {
+const ProgressBar = (props) => {
   const [currentProgress, setCurrentProgress] = useState(10);
-
+  console.log(props.checked);
   useEffect(() => {
-    if (currentProgress < 100) {
-      const interval = setTimeout(() => {
+    if (props.checked) {
+      setTimeout(() => {
         setCurrentProgress((prev) => (prev += 1));
-      }, 50);
+      }, 500);
     } else {
       setCurrentProgress(10);
     }
-  }, [currentProgress]);
+  }, [currentProgress, props.checked]);
 
   return (
     <WrapperProgress>
