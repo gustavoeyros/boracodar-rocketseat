@@ -10,7 +10,9 @@ export const TotalProgress = styled.div`
 
 export const CurrentProgress = styled.div`
   background: #d9d9d9;
-  width: 165px;
+  width: ${(props) => {
+    return `${props.value}%`;
+  }};
   height: 6px;
   border-radius: 9.6px;
   opacity: 0.8;

@@ -12,7 +12,6 @@ const Button = () => {
   const touchedHandler = () => {
     setIsTouched(!isTouched);
   };
-  console.log(isTouched);
 
   return (
     <ButtonContainer>
