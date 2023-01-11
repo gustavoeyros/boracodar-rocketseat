@@ -26,6 +26,10 @@ export const Timer = styled.div`
   ${(props) => (props.gapType === "second" ? "gap: 210px;" : "gap:117px;")}
   font-size: 14.405px;
   opacity: 0.8;
+
+  @media (max-width: 767px) {
+    ${(props) => (props.gapType === "second" ? "gap: 150px;" : "gap:117px;")}
+  }
 `;
 
 export const WrapperProgress = styled.div`

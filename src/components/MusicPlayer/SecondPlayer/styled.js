@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
   height: 266.68px;
   background: #2a2141;
   border-radius: 9.60297px;
+
+  @media (max-width: 767px) {
+    width: 300px;
+  }
 `;
 
 export const DescContainer = styled.div`
@@ -20,5 +24,9 @@ export const DescContainer = styled.div`
   & img {
     width: 84.03px;
     height: 84.03px;
+  }
+
+  @media (max-width: 767px) {
+    align-items: center;
   }
 `;
