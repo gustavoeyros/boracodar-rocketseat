@@ -29,13 +29,21 @@ const ProgressBar = (props) => {
       }, 50);
 
       if (currentMinute === 3 && currentTimer == 20) {
-        return (second += 1);
+        setCurrentMinute(0);
+        setCurrentTimer(0);
+      }
+
+      if (currentProgress >= 100) {
+        setCurrentProgress(0);
+        setCurrentMinute(0);
+        setCurrentTimer(0);
       }
     } else {
       setCurrentProgress((prev) => prev);
     }
     console.log("Minuto:" + currentMinute);
     console.log("Segundo:" + currentTimer);
+    console.log("Progresso:" + currentProgress + "%");
   }, [currentProgress, props.checked, currentMinute]);
 
   return (
@@ -45,12 +53,12 @@ const ProgressBar = (props) => {
       </TotalProgress>
 
       <Timer>
+        <span>03:20</span>
         <span>
           {currentTimer < 10
             ? `0${currentMinute}:0${currentTimer}`
             : ` 0${currentMinute}:${currentTimer}`}
         </span>
-        <span>03:20</span>
       </Timer>
     </WrapperProgress>
   );
