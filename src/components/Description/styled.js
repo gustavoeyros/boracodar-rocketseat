@@ -7,14 +7,21 @@ export const Title = styled.div`
   align-items: center;
   text-align: left;
   color: white;
+  gap: 9.6px;
 
   & h1 {
     font-size: 24px;
   }
+
   & span {
     font-size: 19px;
     font-weight: 400;
-    padding-top: 9.6px;
     opacity: 0.67;
   }
+`;
+
+export const Desc = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: left;
 `;
