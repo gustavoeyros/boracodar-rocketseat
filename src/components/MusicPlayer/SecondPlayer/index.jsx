@@ -20,7 +20,7 @@ const SecondPlayer = () => {
           <Description />
         </DescContainer>
         <Button touchChecked={onVerifyTouch} />
-        <ProgressBar checked={verifyTouch} />
+        <ProgressBar checked={verifyTouch} gapType={"second"} />
       </Wrapper>
     </>
   );

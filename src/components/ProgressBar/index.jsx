@@ -50,7 +50,7 @@ const ProgressBar = (props) => {
         <CurrentProgress value={currentProgress} />
       </TotalProgress>
 
-      <Timer>
+      <Timer gapType={props.gapType}>
         <span>03:20</span>
         <span>
           {currentTimer < 10
