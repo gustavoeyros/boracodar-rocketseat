@@ -11,13 +11,16 @@ const MusicPlayer = () => {
   const onVerifyTouch = () => {
     setVerifyTouch(!verifyTouch);
   };
+
   return (
-    <Wrapper>
-      <img src={Logo} />
-      <Description />
-      <Button touchChecked={onVerifyTouch} />
-      <ProgressBar checked={verifyTouch} />
-    </Wrapper>
+    <>
+      <Wrapper>
+        <img src={Logo} />
+        <Description />
+        <Button touchChecked={onVerifyTouch} />
+        <ProgressBar checked={verifyTouch} />
+      </Wrapper>
+    </>
   );
 };
 
