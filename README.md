@@ -20,4 +20,13 @@ npm run dev
 
 # Conhecendo o aplicativo
 
-<img src="assets/readme.gif">
+<img src="./src/assets/readme.gif">
+
+<br>
+
+# Tecnologias
+
+<ul>
+<li>React</li>
+<li>Styled-components</li>
+</ul>
