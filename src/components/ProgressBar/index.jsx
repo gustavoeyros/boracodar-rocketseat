@@ -27,7 +27,7 @@ const ProgressBar = (props) => {
         if (currentTimer >= 59) {
           setCurrentMinute((prev) => prev + 1);
         }
-      }, 1000);
+      }, 50);
 
       if (currentMinute === 3 && currentTimer == 20) {
         setCurrentMinute(0);
